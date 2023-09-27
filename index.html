@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image" href="image/cursor.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="cursor.css">
+
+    <title>Any Ending</title>
+</head>
+
+
+
+<body>
+
+
+
+<!-- --------------Reading Content-------------- -->
+    <div class="block" id="content">
+      <ul data-current="0">
+        <li id="part1">
+          <p>
+              Sometimes I pause and think about the ending, I mean, the ending of <span>anything that has begun</span>. 
+          </p>
+        </li>
+
+        <li id="part2">
+          <p>
+              I reach out to the shelf and pick my recent favorite cup, contemplating if my drink needs some ice cubes or not. With a swift motion, I take a sip of the water and continue on the way back from the kitchen.
+          </p>
+        </li>
+
+        <li id="part3">
+          <p>
+              <span>“Was it good then?”</span> I get a piece of mind recalling how yesterday ended. The ice cubes are melting on the side of the table, along with the beads I neglected to tidy up last night. Many how-to videos of making intricate bead chains have been saved to my watch-later playlist, so I just play one randomly and start picking out someone in my acquaintance who would not refuse a handmade bracelet.
+          </p>
+        </li>
+
+        <li id="part4">
+          <p>
+              Packing things up on the worn-out tote bag I’ve been using almost everyday this month, I head out under the scorching heat of the early afternoon sun. My skin is freely exposed to the savage sunlight covering the whole city. My eyes scan for shadows that can offer me any solace at the moment as I speed up my pace.
+          </p>
+        </li>
+
+        <li id="part5">
+          <p>
+              I pass by a local super market while imagining the tasty meal I’m gonna cook tonight. After a few rounds of circling around the store, I notice a female staff putting up a box full of fresh tomatoes onto the shelf. My shoulders will definitely not be able to handle such an oversized shopping bag so I walk away while pursuading myself not to add any of them into the basket.
+          </p>
+        </li>
+
+        <li id="part6">
+          <p>
+              <span>“Tomato” was not in my grocery list</span> for today since I’m not going to cook anything with tomatoes tonight. Some creamy tomato pasta tomorrow? 
+          </p>
+        </li>
+
+        <li id="part7">
+          <p>
+              Grocerry shopping is a legitable reason for me to get myself out of the house—or I'll just stay at home all day and get terrified of having such repeating thoughts like every other day.
+          </p>
+        </li>
+      </ul>
+    </div>
+
+
+
+
+<!-- --------------Videos looping in background-------------- -->
+    <video autoplay muted loop id="myVideo">
+        <source src="video/vid.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+
+<!-- --------------Audio-------------- -->
+    <audio id="myAudio" autoplay loop>
+        <source src="audio/audio.wav" type="audio/wav">
+    </audio>
+
+
+
+<!-- --------------Typing Section-------------- -->
+    <div class="editor">
+        <!-- --------------The text in the placeholder can be changed-------------- -->
+        <textarea id="editor-text" placeholder="There's a story unfolding. Type down how you'd like it to end..."></textarea>
+    </div>
+
+
+
+<!-- --------------Introduction-------------- -->
+<div id="callout">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+  <div class="callout-container">
+    <p>This website uses the motif of the book called <a href="https://rmiteduau-my.sharepoint.com/:b:/g/personal/s3930375_rmit_edu_vn/EbQ_iKNCw79JnK7OtubwafwBelOzZ3u7OmBf3MeKYtGexA?e=D4MPlP">If on a Winter's Night a Traveler</a> by Italo Calvino to discuss the recognition of the ending, of, literally, anything. <br><br>(move or close if it's in your way)</p>
+  </div>
+</div>
+
+
+
+<!-- --------------Customized Cursor-------------- -->
+    <div class="cursor">
+        <div><img src="image/cursor.png"></div>
+    </div>
+
+
+
+</body>
+</html>
+
+
+<!-- --------------Customized Cursor-------------- -->
+<script type="text/javascript" src="cursor.js"></script>
+<!-- --------------Draggable Box-------------- -->
+<script type="text/javascript" src="draggable.js"></script>
+<!-- --------------Autoplayed Audio-------------- -->
+<script type="text/javascript" src="audio.js"></script>
+<!-- --------------Reading Content Looping-------------- -->
+<script  src="./infiniteloop.js"></script>

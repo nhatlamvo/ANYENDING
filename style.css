@@ -1,0 +1,238 @@
+body 
+      {
+            background-color: black;
+            overflow: hidden;
+            cursor: none;
+           
+      }   
+
+
+        
+/*--------------------Font family defining--------------------*/
+@font-face 
+      {
+            font-family: "Anthony";
+            src: url(./typeface/Anthony.otf);
+      }
+
+
+
+/*--------------------Background--------------------*/
+#myVideo 
+      {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            height: 100%;
+            z-index: -10;
+      }
+
+audio
+{
+  visibility: hidden;
+}
+
+/*--------------------Reading Section--------------------*/
+#content
+      {
+            font-family: "Anthony";
+            font-size: 18px;
+            line-height: 22px;
+            color: blue;
+            z-index: 2;
+            background: none;
+            text-align: left;
+
+            position: relative;
+            display: block;
+            width: 40%;
+            height: 90vh;
+            left: 0;
+            top: 20px;
+            padding: 5px 5px;
+            overflow: scroll;
+      }
+
+ul {
+      list-style-type: none;
+}
+
+#content p
+      {
+            width: 25vh;
+      }
+
+
+/*Hide scrollbar*/
+#content::-webkit-scrollbar 
+      {
+          display: none;
+      }
+
+span
+      {
+            font-size: 13px;
+            color: greenyellow;
+            line-height:6px;
+      }
+
+
+/*Recompositioning*/
+#part1
+      {
+            transform: translateX(0);
+      }
+#part2
+      {
+            transform: translateX(10vh);
+      }
+#part3
+      {
+            transform: translateX(20vh);
+      }
+#part4
+      {
+            transform: translateX(30vh);
+      }
+#part5
+      {
+            transform: translateX(20vh);
+      }
+#part6
+      {
+            transform: translateX(10vh);
+      }
+#part7
+      {
+            transform: translateX(0vh);
+      }
+
+
+/*--------------------Typing Section--------------------*/
+#editor-text 
+      {
+            /* Styling text */
+            /*font-family: 'Roberte';
+            font-style: 'Regular';*/
+            font-family: "Anthony";
+            font-size: 42px;
+            line-height: 52px;
+            color: red;
+            z-index: 10;
+            background: none;
+            position: fixed;
+
+            /* Edit the textarea */
+            width: 45%;
+            height: 90vh;
+            margin-right: 5vh;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            padding: 10px 10px;
+            right: 0;
+            top: 0;
+
+
+            box-sizing: border-box;
+            border: none;
+            outline: none;
+            resize: none;
+            text-align: justify;
+            overflow-y: scroll;
+            cursor: pointer;
+      }
+
+/*Hide scrollbar*/
+#editor-text::-webkit-scrollbar 
+      {
+          display: none;
+      }
+
+::placeholder
+      {
+            color: greenyellow;
+      }
+
+
+
+/*--------------------Introduction to the web--------------------*/
+#callout 
+{
+  position: absolute;
+  left: 40%;
+  top: 35%;
+  padding: 10px 10px;
+  width: 300px;
+  font-family: Anthony;
+  z-index: 30;
+}
+
+
+.callout-container {
+  padding: 50px 20px;
+  background-color: aliceblue; ;
+  height: 150px;
+  color: blue;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.callout-container 
+      a:hover { color: blue; }
+      a:visited { color: red; }
+
+
+.closebtn {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  color: red;
+  font-size: 45px;
+  cursor: pointer;
+  padding: 10px 10px;
+}
+
+.closebtn:hover {
+  color: blue;
+}
+
+
+  
+/*--------------------Settings for Responsiveness--------------------*/
+@media screen and (max-width: 600px) 
+{
+            #myVideo 
+                  {
+                        width: auto;
+                        height: 100%;
+                  }
+
+            .content 
+                  {
+                        font-size: 8px;
+                        width: 10vh;
+                        line-height: 8px;
+                  }
+
+
+            #editor-text
+                  {
+                        font-size: 22px;
+                        line-height: 26px;
+                  }
+
+            #callout 
+            {
+                  width: 200px;
+            }
+
+            .callout-container
+            {
+                  font-size: 10px;
+                  height: 80px;
+            }
+
+}
+
+
